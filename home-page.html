@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" media="mediatype and|not|only (expressions)" href="print.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    
+<link rel="icon" type="image/x-icon" href="/white-bkg">
+    <link rel="stylesheet" href="home-page.css">
+    
+</head>
+<body>
+    
+    <header>
+        <div class="header">
+            <nav class="nav">
+                <a href="#" class="nav-logo"><!--<img src="/white-bkg" alt="none" width="100px" height="100px">--> landing page</a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">why us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">team</a>
+                    </li>
+                    
+                </ul>
+               
+            </nav>
+        </div>
+    </header>
+    <section class="main">
+        <div class="">
+            <img src="" alt="">
+            
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="text">
+                    <h1>Lorem  
+                        <span>
+                            ipsum
+                        </span>
+                        <br>
+                        <span>
+                            dolor
+                        </span>
+                    </h1>
+                    <h4>sit amet,  
+                        <span>
+                            consectetur adipisicing elit. 
+                        </span>
+                    </h4>
+                    <p class="home-first-para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut tempore veritatis rem assumenda natus nobis itaque possimus ut est, minus earum qui nam, quae aliquam laudantium provident? Non ipsam cupiditate labore quasi eius mollitia.
+                    </p>
+
+                </div>
+            </div>
+            <div class="overlay">
+                <div class="layer lay1"></div>   
+                <div class="layer lay2"></div>
+                <div class="layer lay3"></div>
+            </div>
+        </div>
+    </section>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.5/gsap.min.js">
+
+</script>
+<script>
+    gsap.to('.lay1', {y: '-100vh', delay: .3} );
+    gsap.to('.lay2', {y: '-100vh', delay: .5} );
+    gsap.to('.lay3', {y: '-100vh', delay: .7} );
+    gsap.to('.overlay', {y: '-100vh', delay: 1} );
+
+    gsap.fromTo('.text', 
+        {
+            x: '300px', opacity: 0
+        },
+        {
+            x:0, opacity:1, ease:'back.out(1.2)', delay:1.5
+        }
+        );
+</script>
+</body> 
+</html>
